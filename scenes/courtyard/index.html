@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6e3c3"><title>记忆小院 · 午后漫游</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <main id="world" aria-label="可行走的记忆小院三维场景"><canvas id="scene" tabindex="0" aria-label="场景画面，拖动环顾，使用 W A S D 行走"></canvas></main>
+  <header class="topbar">
+    <div class="identity"><span class="seal">忆</span><div><h1>记忆小院</h1><p>午后漫游 <span>·</span> 材质精修</p></div></div>
+    <div class="tools"><button id="sound" aria-pressed="false">开启声音</button><button id="quality" aria-pressed="true">画质：精细</button><button id="help" aria-label="查看操作说明">操作说明</button></div>
+  </header>
+  <div id="loading" role="status"><span class="loading-mark">院</span><h2>小院正在醒来</h2><p id="loadText">正在准备场景…</p><div class="track"><i id="progress"></i></div></div>
+  <aside class="place-note" id="placeNote"><span class="eyebrow">此刻所在</span><h2 id="placeTitle">庭院</h2><p id="placeText">沿着小桥，走进那些值得留下的时光。</p></aside>
+  <div id="reticle" aria-hidden="true"></div>
+  <button id="interact" hidden><kbd>E</kbd><span id="interactText"></span></button>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <footer class="bottom-panel">
+    <nav id="views" aria-label="快速前往场景区域"></nav>
+    <div class="walk-row"><button id="walk" class="primary">进入漫游 <span>↗</span></button><p id="controlsHint">拖动环顾 · W A S D 行走 · E 互动 · Esc 释放鼠标</p><button id="roof" hidden>显示屋顶</button></div>
+  </footer>
+  <div class="touch-controls" aria-label="触屏行走"><button data-move="KeyW" aria-label="向前">↑</button><div><button data-move="KeyA" aria-label="向左">←</button><button data-move="KeyS" aria-label="向后">↓</button><button data-move="KeyD" aria-label="向右">→</button></div></div>
+  <dialog id="helpDialog"><button class="close" data-close aria-label="关闭">×</button><span class="eyebrow">在小院里走一走</span><h2>慢一点，也没关系。</h2><dl><dt>环顾</dt><dd>在画面上按住鼠标拖动，或点击“进入漫游”后移动鼠标。</dd><dt>行走</dt><dd>W A S D 或方向键；Shift 加快。Esc 释放鼠标。</dd><dt>互动</dt><dd>走近物件后按 E，也可以点画面中的互动提示。</dd><dt>直接前往</dt><dd>底部区域按钮带你到各个房间；“俯瞰全院”可检查布局。</dd></dl><p class="quiet">这一版固定为明亮午后。先体验空间与物件，个人回忆内容稍后再加入。</p></dialog>
+  <dialog id="memoryDialog"><button class="close" data-close aria-label="关闭">×</button><span class="eyebrow" id="detailTag">物件预览</span><h2 id="detailTitle"></h2><p id="detailText"></p><img id="detailImage" alt="" hidden><button class="primary" data-close>回到小院</button></dialog>
+  <div id="debug" hidden aria-live="off"></div>
+  <script type="module" src="./app.js"></script>
+</body></html>

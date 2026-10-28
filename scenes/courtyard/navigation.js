@@ -1,0 +1,5 @@
+export function inPolygon(x,y,points){let inside=false;for(let i=0,j=points.length-1;i<points.length;j=i++){const a=points[i],b=points[j];if((a[1]>y)!=(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])inside=!inside;}return inside;}
+export function onBridge(x,y,b,pad=0){return Math.abs(x-b.x)<=b.width/2-pad&&y>=b.y0-.22&&y<=b.y1+.22;}
+export function blocked(x,y,meta,r=.22){if(x<-9.65||x>9.65||y<-9.65||y>9.65)return true;for(const c of meta.colliders){const dx=Math.max(Math.abs(x-c.x)-c.w/2,0),dy=Math.max(Math.abs(y-c.y)-c.d/2,0);if(dx*dx+dy*dy<r*r)return true;}if(!onBridge(x,y,meta.bridge,r)){for(const [dx,dy] of [[0,0],[r,0],[-r,0],[0,r],[0,-r]])if(inPolygon(x+dx,y+dy,meta.pond))return true;}return false;}
+export function heightAt(x,y,meta){const b=meta.bridge;if(onBridge(x,y,b)){const t=Math.max(0,Math.min(1,(y-b.y0)/(b.y1-b.y0)));return b.base+b.arch*Math.sin(t*Math.PI)+.075;}return .235;}
+export function stepPosition(x,y,dx,dy,meta){const count=Math.max(1,Math.ceil(Math.hypot(dx,dy)/.08));for(let i=0;i<count;i++){if(!blocked(x+dx/count,y,meta))x+=dx/count;if(!blocked(x,y+dy/count,meta))y+=dy/count;}return {x,y};}

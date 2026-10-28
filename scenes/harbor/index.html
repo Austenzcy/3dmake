@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eeece2"><meta name="description" content="从参考视频重建的樱花微缩港口。探索码头、双吊机、樱花街区、灯塔与海面下的世界。">
+<title>樱港 · 一座小小的港口</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<main id="experience">
+  <div id="stage" role="img" aria-label="可旋转、缩放的樱花港口三维模型"></div>
+  <header class="masthead"><a class="wordmark" href="#" aria-label="返回港口全景"><span class="mark">✳</span> 樱港 <span class="en">SAKURA HARBOR</span></a><div class="header-right"><span class="local-status"><i></i> 在线展览</span><button id="referenceBtn" class="text-btn">场景介绍 <span>↗</span></button></div></header>
+  <section class="intro" aria-live="polite"><div class="eyebrow"><span class="coral-dot"></span> A LITTLE WORLD, SLOWLY ALIVE</div><h1 id="sceneTitle">我用 AI<br>造了一座小港口</h1><p id="sceneSubtitle">一段想象，慢慢长成一个世界。</p></section>
+  <div class="coordinate" aria-hidden="true">35° SAKURA<br>135° MINATO</div>
+  <div class="toolbar" aria-label="场景控制">
+    <button id="pauseBtn" title="暂停场景动画" aria-label="暂停动画" aria-pressed="false"><span>Ⅱ</span><small>暂停</small></button>
+    <button id="rotateBtn" title="自动环绕" aria-pressed="false"><span>⟳</span><small>环绕</small></button>
+    <button id="waterBtn" title="显示或隐藏海水" aria-pressed="false"><span>≋</span><small>海水</small></button>
+    <button id="wireBtn" title="查看模型线框" aria-pressed="false"><span>◇</span><small>线框</small></button>
+    <button id="resetBtn" title="重置视角"><span>⌂</span><small>复位</small></button>
+  </div>
+  <div class="scene-detail"><span id="sceneNumber">01 / 小小港口</span><p id="sceneCaption">货轮靠岸，樱花落下。海面之下，也藏着一个世界。</p><div class="small-rule"></div><div class="scene-actions"><button id="tourBtn" class="pill"><span>▷</span> 跟着镜头逛一圈</button><button id="sailBtn" class="text-btn">让货轮出航 ↗</button></div></div>
+  <div class="interaction-hint"><span class="mouse-icon"></span><span>拖动旋转 · 滚轮缩放 · 轻触海面泛起涟漪</span></div>
+  <footer class="bottom-bar"><nav id="views" aria-label="观景角度">
+    <button data-view="0" class="active" aria-current="true"><span>01</span>小小港口<i></i></button>
+    <button data-view="1"><span>02</span>港口作业<i></i></button>
+    <button data-view="2"><span>03</span>樱花街区<i></i></button>
+    <button data-view="3"><span>04</span>海边散步<i></i></button>
+    <button data-view="4"><span>05</span>水下世界<i></i></button>
+  </nav><div class="footer-note">一方海，一座城，一点生活。<span>VIDEO RECONSTRUCTION · 2026</span></div></footer>
+  <div id="loading" role="status"><div class="loader-line"><i></i></div><div>正在把小港口搬到眼前 <span id="loadPercent">0%</span></div><small>第一次加载需要一点时间</small></div>
+  <div id="toast" role="status"></div>
+</main>
+<dialog id="referenceDialog">
+  <header><div><div class="eyebrow">ABOUT THE SCENE</div><h2>走进这座小港口</h2></div><button id="closeReference" aria-label="关闭场景介绍">×</button></header>
+  <p class="reference-note">左侧为模型渲染预览。选择下方场景，网页镜头会切换到对应区域。<br>模型依据可见画面重建；未展示的背面结构按同一风格补全，尺寸为视觉比例。</p>
+  <div class="reference-body"><img id="referenceImage" src="../../assets/harbor.jpg" alt="港口模型渲染预览"><div class="reference-description"><div id="referenceTime">模型预览</div><h3 id="referenceHeading">小小港口</h3><p id="referenceText">方形海水剖面、后侧港口、右侧防波堤，保留原视频的微缩构图。</p><div class="reference-picks"><button data-ref="0" class="active">01 全景</button><button data-ref="1">02 双吊机</button><button data-ref="2">03 樱花街</button><button data-ref="3">04 灯塔</button><button data-ref="4">05 海底</button></div><button id="backToModel" class="pill">回到对应模型视角 ↗</button><a href="../../assets/harbor.jpg" target="_blank">查看 Blender 全景渲染 ↗</a></div></div>
+</dialog>
+<script type="module" src="app.js"></script>
+</body></html>

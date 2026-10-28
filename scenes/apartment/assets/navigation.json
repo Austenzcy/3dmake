@@ -1,0 +1,874 @@
+{
+  "footprint": [
+    [
+      -7.2,
+      -4.5
+    ],
+    [
+      7.1,
+      -4.5
+    ],
+    [
+      7.1,
+      -1.7
+    ],
+    [
+      6.55,
+      -1.7
+    ],
+    [
+      6.55,
+      5.2
+    ],
+    [
+      4.75,
+      5.2
+    ],
+    [
+      4.75,
+      4.0
+    ],
+    [
+      1.8,
+      4.0
+    ],
+    [
+      1.8,
+      6.2
+    ],
+    [
+      -5.8,
+      6.2
+    ],
+    [
+      -5.8,
+      3.05
+    ],
+    [
+      -7.2,
+      3.05
+    ]
+  ],
+  "colliders": [
+    {
+      "name": "West bedroom exterior",
+      "x": -7.14,
+      "y": -2.45,
+      "w": 0.16,
+      "d": 4.0,
+      "angle": 0
+    },
+    {
+      "name": "West bathroom exterior",
+      "x": -7.14,
+      "y": 1.1,
+      "w": 0.16,
+      "d": 3.9,
+      "angle": 0
+    },
+    {
+      "name": "Bathroom rear wall",
+      "x": -6.48,
+      "y": 3.0,
+      "w": 1.45,
+      "d": 0.16,
+      "angle": 0
+    },
+    {
+      "name": "Office west wall",
+      "x": -5.76,
+      "y": 4.65,
+      "w": 0.16,
+      "d": 3.14,
+      "angle": 0
+    },
+    {
+      "name": "Office and reading rear wall",
+      "x": -2.0,
+      "y": 6.14,
+      "w": 7.6,
+      "d": 0.16,
+      "angle": 0
+    },
+    {
+      "name": "Bedroom front sill",
+      "x": -5.25,
+      "y": -4.42,
+      "w": 3.9,
+      "d": 0.14,
+      "angle": 0
+    },
+    {
+      "name": "Living front sill",
+      "x": -0.1,
+      "y": -4.42,
+      "w": 6.4,
+      "d": 0.14,
+      "angle": 0
+    },
+    {
+      "name": "Bedroom bathroom separation",
+      "x": -5.7,
+      "y": -0.05,
+      "w": 2.9,
+      "d": 0.15,
+      "angle": 0
+    },
+    {
+      "name": "Bathroom hall wall back",
+      "x": -4.25,
+      "y": 2.05,
+      "w": 0.15,
+      "d": 1.8,
+      "angle": 0
+    },
+    {
+      "name": "Bathroom doorway return",
+      "x": -4.25,
+      "y": 0.25,
+      "w": 0.15,
+      "d": 0.48,
+      "angle": 0
+    },
+    {
+      "name": "Bedroom doorway stub",
+      "x": -3.2,
+      "y": -0.05,
+      "w": 0.75,
+      "d": 0.15,
+      "angle": 0
+    },
+    {
+      "name": "Bedroom entry jamb",
+      "x": -3.46,
+      "y": -1.0,
+      "w": 0.13,
+      "d": 1.2,
+      "angle": 0
+    },
+    {
+      "name": "Office bathroom divider",
+      "x": -3.25,
+      "y": 4.65,
+      "w": 0.14,
+      "d": 3.05,
+      "angle": 0
+    },
+    {
+      "name": "Office front half wall",
+      "x": -5.2,
+      "y": 3.12,
+      "w": 1.1,
+      "d": 0.14,
+      "angle": 0
+    },
+    {
+      "name": "Office entry return",
+      "x": -3.45,
+      "y": 3.12,
+      "w": 0.35,
+      "d": 0.14,
+      "angle": 0
+    },
+    {
+      "name": "Ensuite east wall",
+      "x": -1.22,
+      "y": 4.65,
+      "w": 0.14,
+      "d": 3.0,
+      "angle": 0
+    },
+    {
+      "name": "Ensuite entrance return",
+      "x": -1.85,
+      "y": 3.12,
+      "w": 1.25,
+      "d": 0.14,
+      "angle": 0
+    },
+    {
+      "name": "Hall sink back",
+      "x": -2.6,
+      "y": 2.9,
+      "w": 1.25,
+      "d": 0.13,
+      "angle": 0
+    },
+    {
+      "name": "Reading corner east",
+      "x": 1.72,
+      "y": 4.0,
+      "w": 0.16,
+      "d": 4.2,
+      "angle": 0
+    },
+    {
+      "name": "Reading back wooden fin",
+      "x": 1.59,
+      "y": 4.85,
+      "w": 0.19,
+      "d": 2.5,
+      "angle": 0
+    },
+    {
+      "name": "Kitchen hall panel",
+      "x": 1.72,
+      "y": 1.1,
+      "w": 0.15,
+      "d": 1.35,
+      "angle": 0
+    },
+    {
+      "name": "Kitchen east cutaway",
+      "x": 6.48,
+      "y": 1.4,
+      "w": 0.14,
+      "d": 4.65,
+      "angle": 0
+    },
+    {
+      "name": "Guest west low wall",
+      "x": 4.38,
+      "y": -3.77,
+      "w": 0.14,
+      "d": 1.35,
+      "angle": 0
+    },
+    {
+      "name": "Guest front sill",
+      "x": 5.72,
+      "y": -4.42,
+      "w": 2.7,
+      "d": 0.14,
+      "angle": 0
+    },
+    {
+      "name": "Guest east wall",
+      "x": 7.03,
+      "y": -3.1,
+      "w": 0.14,
+      "d": 2.64,
+      "angle": 0
+    },
+    {
+      "name": "Guest rear wall",
+      "x": 5.95,
+      "y": -1.77,
+      "w": 2.3,
+      "d": 0.14,
+      "angle": 0
+    },
+    {
+      "name": "Tall central partition",
+      "x": -2.55,
+      "y": -1.22,
+      "w": 0.24,
+      "d": 3.82,
+      "angle": 0
+    },
+    {
+      "name": "Hall dark jamb",
+      "x": -3.0,
+      "y": 1.18,
+      "w": 0.16,
+      "d": 0.42,
+      "angle": 0
+    },
+    {
+      "name": "bed",
+      "x": -5.5,
+      "y": -2.54,
+      "w": 2.07,
+      "d": 2.4200000000000004,
+      "angle": 1.5707963267948966
+    },
+    {
+      "name": "nightstand",
+      "x": -6.73,
+      "y": -1.3,
+      "w": 0.47,
+      "d": 0.44,
+      "angle": 0
+    },
+    {
+      "name": "nightstand",
+      "x": -6.73,
+      "y": -3.76,
+      "w": 0.47,
+      "d": 0.44,
+      "angle": 0
+    },
+    {
+      "name": "bed",
+      "x": 5.87,
+      "y": -3.12,
+      "w": 1.72,
+      "d": 2.2600000000000002,
+      "angle": -1.5707963267948966
+    },
+    {
+      "name": "nightstand",
+      "x": 6.75,
+      "y": -2.0,
+      "w": 0.47,
+      "d": 0.44,
+      "angle": 0
+    },
+    {
+      "name": "guest wardrobe",
+      "x": 4.75,
+      "y": -1.83,
+      "w": 1.28,
+      "d": 0.62,
+      "angle": 0
+    },
+    {
+      "name": "sofa",
+      "x": -1.72,
+      "y": -1.45,
+      "w": 2.18,
+      "d": 1.0,
+      "angle": 1.5707963267948966
+    },
+    {
+      "name": "armchair",
+      "x": 0.13,
+      "y": -3.03,
+      "w": 0.94,
+      "d": 0.98,
+      "angle": 2.638937829015426
+    },
+    {
+      "name": "round table",
+      "x": 0.2,
+      "y": -1.45,
+      "w": 0.58,
+      "d": 0.58,
+      "angle": 0
+    },
+    {
+      "name": "dining table",
+      "x": 2.62,
+      "y": -2.28,
+      "w": 1.15,
+      "d": 2.44,
+      "angle": 0
+    },
+    {
+      "name": "dining chair",
+      "x": 1.71,
+      "y": -3.11,
+      "w": 0.53,
+      "d": 0.59,
+      "angle": -1.5707963267948966
+    },
+    {
+      "name": "dining chair",
+      "x": 3.5300000000000002,
+      "y": -3.11,
+      "w": 0.53,
+      "d": 0.59,
+      "angle": 1.5707963267948966
+    },
+    {
+      "name": "dining chair",
+      "x": 1.71,
+      "y": -2.28,
+      "w": 0.53,
+      "d": 0.59,
+      "angle": -1.5707963267948966
+    },
+    {
+      "name": "dining chair",
+      "x": 3.5300000000000002,
+      "y": -2.28,
+      "w": 0.53,
+      "d": 0.59,
+      "angle": 1.5707963267948966
+    },
+    {
+      "name": "dining chair",
+      "x": 1.71,
+      "y": -1.4499999999999997,
+      "w": 0.53,
+      "d": 0.59,
+      "angle": -1.5707963267948966
+    },
+    {
+      "name": "dining chair",
+      "x": 3.5300000000000002,
+      "y": -1.4499999999999997,
+      "w": 0.53,
+      "d": 0.59,
+      "angle": 1.5707963267948966
+    },
+    {
+      "name": "armchair",
+      "x": -0.48,
+      "y": 3.15,
+      "w": 0.94,
+      "d": 0.98,
+      "angle": -1.5707963267948966
+    },
+    {
+      "name": "armchair",
+      "x": -0.08,
+      "y": 4.53,
+      "w": 0.94,
+      "d": 0.98,
+      "angle": 0.12
+    },
+    {
+      "name": "round table",
+      "x": 0.73,
+      "y": 3.48,
+      "w": 0.48,
+      "d": 0.48,
+      "angle": 0
+    },
+    {
+      "name": "record cabinet",
+      "x": 0.38,
+      "y": 5.77,
+      "w": 1.98,
+      "d": 0.57,
+      "angle": 0
+    },
+    {
+      "name": "office desk",
+      "x": -4.5,
+      "y": 5.71,
+      "w": 2.48,
+      "d": 0.73,
+      "angle": 0
+    },
+    {
+      "name": "office side chest",
+      "x": -5.35,
+      "y": 3.58,
+      "w": 0.67,
+      "d": 0.62,
+      "angle": 0
+    },
+    {
+      "name": "office chair",
+      "x": -5.15,
+      "y": 4.6,
+      "w": 0.64,
+      "d": 0.68,
+      "angle": 0
+    },
+    {
+      "name": "office chair",
+      "x": -3.91,
+      "y": 4.6,
+      "w": 0.64,
+      "d": 0.68,
+      "angle": 0
+    },
+    {
+      "name": "bathroom vanity",
+      "x": -5.25,
+      "y": 2.52,
+      "w": 1.23,
+      "d": 0.62,
+      "angle": 0
+    },
+    {
+      "name": "toilet",
+      "x": -4.96,
+      "y": 0.72,
+      "w": 0.58,
+      "d": 0.82,
+      "angle": 0.1
+    },
+    {
+      "name": "hall vanity",
+      "x": -2.18,
+      "y": 2.52,
+      "w": 0.73,
+      "d": 0.59,
+      "angle": 0
+    },
+    {
+      "name": "bathtub",
+      "x": -2.1,
+      "y": 5.2,
+      "w": 1.1,
+      "d": 1.8,
+      "angle": 0
+    },
+    {
+      "name": "toilet",
+      "x": -2.78,
+      "y": 3.92,
+      "w": 0.58,
+      "d": 0.82,
+      "angle": 1.5707963267948966
+    },
+    {
+      "name": "sink run",
+      "x": 3.75,
+      "y": 2.71,
+      "w": 2.48,
+      "d": 0.72,
+      "angle": 0
+    },
+    {
+      "name": "kitchen return",
+      "x": 5.13,
+      "y": 1.86,
+      "w": 0.76,
+      "d": 2.42,
+      "angle": 0
+    },
+    {
+      "name": "peninsula",
+      "x": 3.94,
+      "y": 0.63,
+      "w": 2.53,
+      "d": 0.87,
+      "angle": 0
+    },
+    {
+      "name": "refrigerator",
+      "x": 1.97,
+      "y": 1.97,
+      "w": 0.82,
+      "d": 0.85,
+      "angle": 0
+    },
+    {
+      "name": "dining chair",
+      "x": 3.34,
+      "y": -0.19,
+      "w": 0.53,
+      "d": 0.59,
+      "angle": 0
+    },
+    {
+      "name": "entrance",
+      "x": 6.33,
+      "y": 3.43,
+      "w": 0.2,
+      "d": 1.31,
+      "angle": 0
+    },
+    {
+      "name": "sofa",
+      "x": 6.0,
+      "y": -0.38,
+      "w": 1.8399999999999999,
+      "d": 1.0,
+      "angle": 1.5707963267948966
+    },
+    {
+      "name": "armchair",
+      "x": 5.47,
+      "y": 4.31,
+      "w": 0.94,
+      "d": 0.98,
+      "angle": 0.35
+    },
+    {
+      "name": "plant",
+      "x": -1.96,
+      "y": -3.88,
+      "w": 0.5060000000000001,
+      "d": 0.5060000000000001,
+      "angle": 0
+    },
+    {
+      "name": "plant",
+      "x": 1.54,
+      "y": 0.01,
+      "w": 0.5060000000000001,
+      "d": 0.5060000000000001,
+      "angle": 0
+    },
+    {
+      "name": "plant",
+      "x": 5.04,
+      "y": 4.96,
+      "w": 0.44000000000000006,
+      "d": 0.44000000000000006,
+      "angle": 0
+    }
+  ],
+  "eyeHeight": 1.63,
+  "start": [
+    0.65,
+    -0.2
+  ],
+  "rooms": [
+    {
+      "name": "客厅",
+      "p": [
+        0.65,
+        -0.2
+      ]
+    },
+    {
+      "name": "主卧",
+      "p": [
+        -3.92,
+        -1.05
+      ]
+    },
+    {
+      "name": "书房",
+      "p": [
+        -4.5,
+        3.6
+      ]
+    },
+    {
+      "name": "阅读角",
+      "p": [
+        0.66,
+        2.55
+      ]
+    },
+    {
+      "name": "厨房",
+      "p": [
+        3.9,
+        1.7
+      ]
+    },
+    {
+      "name": "次卧",
+      "p": [
+        4.45,
+        -2.65
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "name": "Bedside pool",
+      "position": [
+        -6.73,
+        -1.3,
+        0.74
+      ],
+      "power": 13,
+      "color": [
+        1,
+        0.82,
+        0.6
+      ]
+    },
+    {
+      "name": "Bedside pool",
+      "position": [
+        -6.73,
+        -3.76,
+        0.74
+      ],
+      "power": 13,
+      "color": [
+        1,
+        0.82,
+        0.6
+      ]
+    },
+    {
+      "name": "Bedside pool",
+      "position": [
+        6.75,
+        -2.0,
+        0.72
+      ],
+      "power": 13,
+      "color": [
+        1,
+        0.82,
+        0.6
+      ]
+    },
+    {
+      "name": "Warm standing lamp",
+      "position": [
+        -1.88,
+        0.03,
+        1.5199999999999998
+      ],
+      "power": 30,
+      "color": [
+        1,
+        0.64,
+        0.3
+      ]
+    },
+    {
+      "name": "Downward lamplight",
+      "position": [
+        -1.88,
+        0.03,
+        1.46
+      ],
+      "power": 28,
+      "color": [
+        1,
+        0.71,
+        0.4
+      ]
+    },
+    {
+      "name": "Divider warm wall wash",
+      "position": [
+        -2.18,
+        -2.7,
+        1.97
+      ],
+      "power": 45,
+      "color": [
+        1,
+        0.64,
+        0.29
+      ]
+    },
+    {
+      "name": "Divider warm wall wash",
+      "position": [
+        -2.18,
+        -0.1,
+        1.97
+      ],
+      "power": 45,
+      "color": [
+        1,
+        0.64,
+        0.29
+      ]
+    },
+    {
+      "name": "Warm standing lamp",
+      "position": [
+        -0.65,
+        4.85,
+        1.5399999999999998
+      ],
+      "power": 30,
+      "color": [
+        1,
+        0.64,
+        0.3
+      ]
+    },
+    {
+      "name": "Downward lamplight",
+      "position": [
+        -0.65,
+        4.85,
+        1.48
+      ],
+      "power": 28,
+      "color": [
+        1,
+        0.71,
+        0.4
+      ]
+    },
+    {
+      "name": "Soft overhead task pool",
+      "position": [
+        -6.9,
+        2.8,
+        2.31
+      ],
+      "power": 45,
+      "color": [
+        1,
+        0.88,
+        0.69
+      ]
+    },
+    {
+      "name": "Soft overhead task pool",
+      "position": [
+        -2.4,
+        6.05,
+        2.76
+      ],
+      "power": 45,
+      "color": [
+        1,
+        0.88,
+        0.69
+      ]
+    },
+    {
+      "name": "Soft overhead task pool",
+      "position": [
+        1.73,
+        3.84,
+        2.46
+      ],
+      "power": 45,
+      "color": [
+        1,
+        0.88,
+        0.69
+      ]
+    },
+    {
+      "name": "Large soft studio key",
+      "position": [
+        -3,
+        -2,
+        10
+      ],
+      "power": 260,
+      "color": [
+        1,
+        0.86,
+        0.67
+      ]
+    },
+    {
+      "name": "Cool subdued office fill",
+      "position": [
+        -4.6,
+        5.1,
+        4.5
+      ],
+      "power": 40,
+      "color": [
+        0.84,
+        0.91,
+        1
+      ]
+    },
+    {
+      "name": "Kitchen soft white work light",
+      "position": [
+        4.0,
+        1.8,
+        4.0
+      ],
+      "power": 65,
+      "color": [
+        1,
+        0.9,
+        0.75
+      ]
+    },
+    {
+      "name": "Dining amber bounce",
+      "position": [
+        1.9,
+        -2.2,
+        3.2
+      ],
+      "power": 38,
+      "color": [
+        1,
+        0.7,
+        0.36
+      ]
+    }
+  ],
+  "dimensionsApproximate": true
+}
