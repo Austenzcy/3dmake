@@ -13,3 +13,7 @@ Courtyard materials and environment (CC0, as recorded in the original project):
 - [white_plaster_02](https://polyhaven.com/a/white_plaster_02) — CC0
 - [leafy_grass](https://polyhaven.com/a/leafy_grass) — CC0
 - [kloofendal_48d_partly_cloudy](https://polyhaven.com/a/kloofendal_48d_partly_cloudy) — CC0
+
+## Aventador SVJ
+
+Vehicle geometry and original textures: [Lamborghini official AR model](https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/augmented-reality/aventador/svj/AventadorSVJ_09.glb). The modified showroom retains the source attribution and model limitations. Vehicle assets and trademarks remain the property of their respective rights holders; no additional license is granted here. Three.js MIT license is retained at `scenes/lamborghini/vendor/LICENSE`.

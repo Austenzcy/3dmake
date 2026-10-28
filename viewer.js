@@ -1,5 +1,5 @@
 'use strict';
-const scenes={harbor:{title:'樱港',src:'scenes/harbor/'},courtyard:{title:'记忆小院',src:'scenes/courtyard/'},apartment:{title:'暖夜公寓',src:'scenes/apartment/'}};
+const scenes={lamborghini:{title:'兰博基尼 Aventador SVJ',src:'scenes/lamborghini/'},harbor:{title:'樱港',src:'scenes/harbor/'},courtyard:{title:'记忆小院',src:'scenes/courtyard/'},apartment:{title:'暖夜公寓',src:'scenes/apartment/'}};
 const select=document.getElementById('scene'),frame=document.getElementById('sceneFrame'),direct=document.getElementById('direct');
 function showScene(id,update=false){if(!Object.hasOwn(scenes,id))id='harbor';const scene=scenes[id];select.value=id;frame.title=scene.title+' · 交互三维场景';frame.src=scene.src;direct.href=scene.src;document.title=scene.title+' · 3DMAKE';if(update){const url=new URL(location.href);url.searchParams.set('scene',id);history.pushState({},'',url);}}
 select.addEventListener('change',()=>showScene(select.value,true));

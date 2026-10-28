@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050607"><title>Aventador SVJ · 交互展厅</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050607'/%3E%3Cpath d='M8 8h7l-4 16H4zm12 0h8l-10 16h-7z' fill='%23b9ef45'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css"></head>
+<body><main id="stage"><canvas id="viewport" aria-label="可旋转查看的 Aventador SVJ 三维模型"></canvas>
+<header><div class="wordmark"><span class="eyebrow">LAMBORGHINI</span><h1>AVENTADOR <em>SVJ</em></h1><p>VERDE · 荧光绿 / 黑色展厅</p></div><button id="controls-toggle" class="quiet" aria-expanded="true">收起控制</button></header>
+<div class="view-label"><span class="status-dot"></span><span id="view-name">前侧外观</span><span class="separator">/</span><span id="model-status">载入模型</span></div>
+<div id="loading" role="status"><div class="spinner"></div><strong id="loading-title">正在进入展厅</strong><span id="loading-subtitle">加载车身、座舱与材质细节</span></div>
+<footer><div class="camera-nav" aria-label="预设视角"><button data-camera="front" class="active">前侧</button><button data-camera="side">侧面</button><button data-camera="rear">后侧</button><button data-camera="cockpit">驾驶舱</button><button data-camera="cabin">座舱细节</button></div><p class="gesture">拖动旋转 <span>·</span> 滚轮缩放 <span>·</span> 右键平移</p></footer>
+</main>
+<aside id="controls" inert><div class="panel-heading"><div><span class="eyebrow">INTERACTIVE / 01</span><h2>车辆控制</h2></div><span class="version">V1.0</span></div>
+<section class="control-section"><div class="section-top"><h3>剪刀门</h3><span>独立开合</span></div>
+<label for="door-left">左车门 <output id="value-door_left">0%</output></label><input id="door-left" type="range" min="0" max="100" value="0" data-control="door_left">
+<label for="door-right">右车门 <output id="value-door_right">0%</output></label><input id="door-right" type="range" min="0" max="100" value="0" data-control="door_right"></section>
+<section class="control-section"><div class="section-top"><h3>车窗</h3><span>0% 升起 / 100% 降下</span></div>
+<label for="window-left">左侧窗 <output id="value-window_left">0%</output></label><input id="window-left" type="range" min="0" max="100" value="0" data-control="window_left">
+<label for="window-right">右侧窗 <output id="value-window_right">0%</output></label><input id="window-right" type="range" min="0" max="100" value="0" data-control="window_right"></section>
+<section class="control-section"><div class="section-top"><h3>前备箱</h3><span>舱盖开合</span></div>
+<label for="frunk">开启程度 <output id="value-frunk_open">0%</output></label><input id="frunk" type="range" min="0" max="100" value="0" data-control="frunk_open">
+<div class="button-row"><button id="open-all">展开车门与舱盖</button><button id="close-all">全部关闭</button></div></section>
+<section class="control-section wheels"><div class="section-top"><h3>车轮</h3><span id="wheel-state">车轮已停止</span></div><div class="speed-readout"><output id="speed-value">0</output><span>km/h</span></div>
+<label for="speed" class="sr-only">车轮等效速度</label><input id="speed" type="range" min="0" max="120" value="0"><div class="range-labels"><span>0</span><span>等效滚动速度</span><span>120</span></div>
+<button id="wheel-toggle" class="primary" aria-pressed="false">转动车轮</button><p class="micro">车身保持原位，前后轮按各自半径转动。</p></section>
+<div class="panel-actions"><button id="reset">重置展示</button><button id="snapshot">保存当前画面</button></div><button id="info-open" class="info-link">模型来源与版本说明 <span>↗</span></button>
+</aside>
+<dialog id="info"><button id="info-close" aria-label="关闭模型说明">×</button><span class="eyebrow">ABOUT THIS MODEL</span><h2>Aventador SVJ · 第一版</h2><p>采用兰博基尼官方公开 AR 模型作为车辆几何底稿，保留原始外观、座舱与贴图，完成部件拆分、展示用开合控制、荧光绿漆面和黑色展厅。</p><dl><div><dt>车型</dt><dd>Aventador SVJ 硬顶版</dd></div><div><dt>几何量</dt><dd><span id="triangle-count">—</span> 个三角面</dd></div><div><dt>车身尺寸</dt><dd>约 4.941 × 2.274 × 1.145 m（含后视镜）</dd></div></dl><p>本版支持四轮转动、左右剪刀门、左右侧窗和前备箱。车身换色、车灯、内置灯、尾气、发动机动态及气流展示已预留位置，暂未启用。</p><p class="note">精度说明：这是官方展示模型，并非原厂工程 CAD。原始贴图最高为 1024 像素；门窗运动路径为展示绑定，未按实测机构校准。发动机内部、车窗升降器等隐藏结构尚未重建。</p><p class="source-link"><a href="https://www.lamborghini.com/en-en/history/aventador-svj" target="_blank" rel="noopener">官方车型参考 ↗</a> <a href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/augmented-reality/aventador/svj/AventadorSVJ_09.glb" target="_blank" rel="noopener">官方模型来源 ↗</a></p></dialog>
+<script src="./app.bundle.js"></script></body></html>
